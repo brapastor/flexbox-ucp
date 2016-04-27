@@ -1,0 +1,51 @@
+.Header{
+    background: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 2rem;
+    height: 5rem;
+}
+.Logo{
+    margin: 0;
+}
+.List{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+}
+.item{
+    display: inline-block;
+}
+
+section{
+    display: flex;
+
+}
+.Noticia{
+    width: 70%;
+    background:red;
+    height: 60vh;
+}
+.List_noticia{
+    width: 30%;
+    background: peru;
+    height: 60vh;
+}
+
+@media (max-width: 480px) {
+    section{
+        flex-direction: column;
+    }
+    .Noticia,.List_noticia{
+        width: 100%;
+    }
+    .Noticia{
+        order: 3;
+    }
+    .List_noticia{
+        order: 2;
+    }
+}
